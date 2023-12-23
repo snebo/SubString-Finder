@@ -6,7 +6,7 @@ RSpec.describe "Substring Finder" do
     let(:array) { ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"] }
     
     context 'produce the substrings found in the array' do
-      xit 'returns the substring of the word in the dict array' do
+      it 'returns the substring of the word in the dict array' do
         expected_output1 = {"below"=> 1, "low"=> 1}
         word = "below"
         expect(substrings(word,array)).to eq(expected_output1)
